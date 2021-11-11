@@ -1,0 +1,133 @@
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/sky.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.highway{
+  height: 200px;
+  width: 500%;
+  display: block;
+  background-image: url(img/road.jpg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: highway 10s linear infinite;
+}
+@keyframes highway {
+  100%{
+    transform: translateX(-3400px);
+  }
+}
+.city{
+  height: 200px;
+  width: 500%;
+  background-image: url(img/city.png);
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: city 30s linear infinite;
+}
+@keyframes city {
+  100%{
+    transform: translateX(-1400px);
+  }
+}
+.car{
+  width: 20%;
+  left: 20%;
+  bottom: 90px;
+  transform: translateX(-60%);
+  position: absolute;
+  z-index: 2;
+}
+.car-img{
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+}
+@keyframes car {
+  100%{
+    transform: translateY(-1px);
+  }
+  50%{
+    transform: translateY(1px);
+  }
+  0%{
+    transform: translateY(-1px);
+  }
+}
+.wheel{
+  left: 24%;
+  bottom: 25%;
+
+  transform: translateX(-1000%);
+  position: absolute;
+  z-index: 2;
+  animation: wheel 2s linear infinite;
+}
+.wheel-img{
+padding-top: 100px;
+
+}
+.back-wheel{
+  left: -190px;
+  position: absolute;
+  animation: back-wheel 1s linear infinite;
+}
+.front-wheel{
+  left: 120px;
+  right: 100%;
+  position: absolute;
+  animation: front-wheel 1s linear infinite;
+}
+@keyframes wheel {
+  100%{
+    transform: rotate(1deg);
+  }
+
+}
+@keyframes back-wheel {
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+@keyframes front-wheel {
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+.back1-wheel{
+position: absolute;
+left: 50px;
+top: 827px;
+}
+.front1-wheel{
+position: absolute;
+left: 295px;
+top: 827px;
+}
+.car45{
+  top: 727px;
+  position: absolute;
+  display: flex;
+animation: car45 3s linear infinite;
+}
+@@keyframes car45 {
+  100%{
+    transform: translateX(100px);
+  }
+
+}
